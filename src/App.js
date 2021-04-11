@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
 import Header from './components/Header';
 import Search from './components/Search';
 import Dashboard from './components/Dashboard';

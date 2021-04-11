@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useStore } from './../store/store';
 import { GenericGetAction } from './../actions/GenericAction';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { REPO_FETCH_ERROR, REPO_FETCH_INPROGRESS, REPO_FETCH_SUCCESS } from '../constants/ActionTypes';
 import ItemRow from './ItemRow';
 
@@ -21,7 +20,7 @@ const Dashboard = () => {
                 GenericGetAction(state.userProfile.repos_url, actionType, dispatch);
             }
         }
-    }, [state.userProfile]);
+    }, [state.userProfile, dispatch]);
 
     useEffect(() => {
         if (state.repos) {

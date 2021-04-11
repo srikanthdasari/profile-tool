@@ -3,6 +3,7 @@ import { GenericGetAction } from './../actions/GenericAction';
 import { SEARCH_INPROGRESS, SEARCH_ERROR, SEARCH_SUCCESS } from './../constants/ActionTypes';
 import { useState } from 'react';
 const Search = () => {
+    // eslint-disable-next-line no-unused-vars
     const { state, dispatch } = useStore();
     const [searchString, setSearchString] = useState('');
     const onClickHandler = () => {

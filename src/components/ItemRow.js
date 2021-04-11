@@ -7,7 +7,7 @@ const ItemRow = ({ icon, title, link, description }) => {
                 <FontAwesomeIcon icon={icon} size="4x" className={"text-yellow-700"} />
             </div>
             <div class="ml-6 pt-1 text-left">
-                <h4 class="text-xl text-gray-900">{title} <a href={link} target="_blank"><FontAwesomeIcon icon={["fas", "external-link-alt"]} className={"text-blue-700 align-right"} /></a> </h4>
+                <h4 class="text-xl text-gray-900">{title} <a href={link} rel="noreferrer" target="_blank"><FontAwesomeIcon icon={["fas", "external-link-alt"]} className={"text-blue-700 align-right"} /></a> </h4>
                 <p class="text-base text-gray-600">{description}</p>
 
 
